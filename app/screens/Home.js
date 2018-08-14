@@ -10,6 +10,7 @@ import { Container } from '../components/Container';
 import { InputWithLabelAbove, InputNumber } from '../components/TextInput';
 import { Header } from '../components/Header';
 import { ResultDisplayer } from '../components/ResultDisplayer';
+import { Footer } from '../components/Footer';
 
 export default class Home extends React.Component {
 
@@ -21,6 +22,7 @@ export default class Home extends React.Component {
             <InputWithLabelAbove  label="Select Formula"/> 
             <InputNumber label="Input Number"/>
             <ResultDisplayer result={20} label="Output"/>
+            <Footer navigation={this.props.navigation}/>
         </Container>
         );
     }

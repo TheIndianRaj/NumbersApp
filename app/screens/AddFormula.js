@@ -11,6 +11,7 @@ import { Header } from '../components/Header';
 import { Button, LongButton } from '../components/Button';
 import { InputWithLabelAbove, InputText } from '../components/TextInput';
 import { FormulaDisplayer } from '../components/FormulaDisplayer';
+import { Footer } from '../components/Footer';
 
 export default class AddFormula extends React.Component {
 
@@ -33,6 +34,7 @@ export default class AddFormula extends React.Component {
             <View style={{marginTop: 25}}>
                 <LongButton label="Save"/>
             </View>
+            <Footer navigation={this.props.navigation}/>
         </Container>
         );
     }

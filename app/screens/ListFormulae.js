@@ -9,6 +9,7 @@ import {
 import { Container } from '../components/Container';
 import { Header } from '../components/Header';
 import { FormulaListRow } from '../components/FormulaListRow';
+import { Footer } from '../components/Footer';
 
 export default class ListFormulae extends React.Component {
 
@@ -24,6 +25,7 @@ export default class ListFormulae extends React.Component {
                     <FormulaListRow formula={{name: 'Product', text: "a1 * b1"}}/>
                 </View>
             </ScrollView>
+            <Footer navigation={this.props.navigation}/>
         </Container>
         );
     }

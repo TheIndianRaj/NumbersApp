@@ -1,5 +1,4 @@
 import React from 'react';
+import Navigator from './config/routes';
 
-import AddFormula from './screens/AddFormula';
-
-export default () => <AddFormula/>;
+export default () => <Navigator/>;
