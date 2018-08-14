@@ -19,6 +19,7 @@ export default class AddFormula extends React.Component {
         <Container>
             <StatusBar translucent={false} barStyle="default"/>
             <Header pageHeading="Add Formula"/>
+            <FormulaDisplayer label="Formula" result="a+b-c" />
             <Button label="Variable"/>
             <View style={{flexDirection: 'row'}}>
                 <Button label="+"/>
@@ -28,7 +29,6 @@ export default class AddFormula extends React.Component {
                 <Button label="("/>
                 <Button label=")"/>
             </View>
-            <FormulaDisplayer label="Formula" result="a+b-c" />
             <View style={{marginTop: 25}}>
                 <LongButton label="Save"/>
             </View>

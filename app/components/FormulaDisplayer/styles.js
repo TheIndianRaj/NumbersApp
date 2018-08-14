@@ -12,7 +12,7 @@ export default styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       flexDirection: 'row',
-      marginTop: 100,
+      marginBottom: 100,
   },
   heading: {
     fontWeight: 'bold',

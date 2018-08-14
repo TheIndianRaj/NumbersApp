@@ -9,7 +9,9 @@ const FormulaDisplayer = ({result, label}) =>
     <View style={styles.container}>
         <View style={styles.inner}>
             <Text style={styles.label}>{label}</Text>
-            <Text style={styles.result}>{result}</Text>
+            <View style={styles.box}>
+                <Text style={styles.result}>{result}</Text>
+            </View>
         </View>
     </View>
 
