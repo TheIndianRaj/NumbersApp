@@ -8,7 +8,7 @@ export default styles = StyleSheet.create({
     header: {
       height: 40,
       alignItems: 'center',
-      marginTop: 25,
+      marginTop: 20,
       backgroundColor: '#2483fc',
       alignItems: 'center',
       justifyContent: 'center',
