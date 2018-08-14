@@ -1,25 +1,27 @@
 import React from 'react';
 import { 
-  StyleSheet, 
   Text, 
+  StatusBar,
+  TextInput,
   View,
 } from 'react-native';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>home</Text>
-      </View>
-    );
-  }
-}
+import { Container } from '../components/Container';
+import { InputWithLabelAbove, InputNumber } from '../components/TextInput';
+import { Header } from '../components/Header';
+import { ResultDisplayer } from '../components/ResultDisplayer';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default class Home extends React.Component {
+
+    render() {
+        return (
+        <Container>
+            <StatusBar translucent={false} barStyle="default"/>
+            <Header pageHeading="Home"/>
+            <InputWithLabelAbove  label="Select Formula"/> 
+            <InputNumber label="Input Number"/>
+            <ResultDisplayer result={20} label="Output"/>
+        </Container>
+        );
+    }
+}
