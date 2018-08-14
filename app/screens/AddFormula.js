@@ -9,7 +9,7 @@ import {
 import { Container } from '../components/Container';
 import { Header } from '../components/Header';
 import { Button, LongButton } from '../components/Button';
-import { InputWithLabelAbove } from '../components/TextInput';
+import { InputWithLabelAbove, InputText } from '../components/TextInput';
 import { FormulaDisplayer } from '../components/FormulaDisplayer';
 
 export default class AddFormula extends React.Component {
@@ -29,6 +29,7 @@ export default class AddFormula extends React.Component {
                 <Button label="("/>
                 <Button label=")"/>
             </View>
+            <InputText label="Formula Name" />
             <View style={{marginTop: 25}}>
                 <LongButton label="Save"/>
             </View>

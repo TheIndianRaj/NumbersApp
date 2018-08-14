@@ -7,13 +7,13 @@ import {
 
 import styles from './styles';
 
-const InputNumber = ({label}) => {
+const InputText = ({label}) => {
     return( 
         <View style={{flexDirection: 'row', marginTop: 10}}>
             <Text style={styles.label}>{label}</Text>
-            <TextInput style={styles.textInput}/>
+            <TextInput style={styles.textInputEdgesCurved}/>
         </View>
     );
 }
 
-export default InputNumber;
+export default InputText;
