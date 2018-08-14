@@ -1,5 +1,5 @@
 import React from 'react';
 
-import Home from './screens/Home';
+import AddFormula from './screens/AddFormula';
 
-export default () => <Home/>;
+export default () => <AddFormula/>;
