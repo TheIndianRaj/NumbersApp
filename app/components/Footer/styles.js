@@ -14,6 +14,7 @@ export default styles = StyleSheet.create({
     borderColor: '#bbb',
     flex: 1,
     flexDirection: 'row',
+    backgroundColor: '#fff'
   },
   menuSingle: {
     flex: 1, 

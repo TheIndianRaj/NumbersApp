@@ -1,0 +1,2 @@
+export const SELECT_FORMULA = "SELECT_FORMULA";
+export const TOGGLE_LIST = "TOGGLE_LIST";
