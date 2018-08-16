@@ -15,11 +15,12 @@ import { ResultDisplayer } from '../components/ResultDisplayer';
 import { Footer } from '../components/Footer';
 import { SelectFormulaList } from '../components/SelectFormulaList';
 import { selectFormula, toggleList } from '../actions';
+import SelectFormulaButton from '../components/Button/SelectFormulaButton';
 
 class Home extends React.Component {
 
     onPressSelectFormula = () => {
-       this.props.dispatch(toggleList());
+       this.props.toggleList();
     }
 
     render() {
@@ -28,7 +29,7 @@ class Home extends React.Component {
         <Container>
             <StatusBar translucent={false} barStyle="default"/>
             <Header pageHeading="Home"/>
-            <InputWithLabelAbove  label="Select Formula" onFocus={this.onPressSelectFormula}/> 
+            <SelectFormulaButton label="Select Formula" onPress={this.onPressSelectFormula} selectedFormula={"a + b"}/> 
             <InputNumber label="Input Number"/>
             <ResultDisplayer result={0} label="Output"/>
             <Footer navigation={this.props.navigation}/>
@@ -40,8 +41,8 @@ class Home extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        isShowList: state.isShowList,
+        isShowList: state.formulae.isShowList,
     }
 }
 
-export default connect(mapStateToProps, null)(Home);
+export default connect(mapStateToProps, { toggleList })(Home);

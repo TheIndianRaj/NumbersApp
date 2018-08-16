@@ -43,4 +43,19 @@ export default styles = StyleSheet.create({
     innerLong: {
       flex: 1,
     },
+    selectButton: {
+      borderWidth: .5,
+      borderRadius: 5,
+      width: 200,
+      height: 25,
+      borderColor: "#bbb",
+      backgroundColor: "#fff",
+      paddingLeft: 5,
+      justifyContent: 'center',
+    },
+    labelSelectButton: {
+        color: '#c4c4c4',
+        marginRight: 5,
+        alignSelf: 'center',
+    },
   });
